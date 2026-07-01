@@ -90,7 +90,7 @@ Make sure ALVR is running both on the PC and on the headset. To be visible in th
 To fix this, you can try the following:
 
 * Ping the headset to check it's reachable from the PC - you can do this by opening CMD and typing `ping <headset IP>` without "<>" (you can find the headset's IP in the top left corner of SideQuest) - if ping fails, check that both PC and headset are connected to the same network
-* You can also try disabling your firewall for testing, but you shouldn't leave it disabled to use ALVR
+* You can also try disabling your firewall for testing, but you shouldn't leave it disabled to use mfsimvr
 * Open ports 9943 and 9944 on your firewall
 * Disable the PMF (Protected Management Frames) setting on your Router
 
@@ -129,7 +129,7 @@ ALVR sees the headset, SteamVR shows headset icon
 
 This is a situation where you have ALVR open on both headset and PC, you can see the headset in the device list and trust it. ALVR then starts SteamVR automatically when you try connecting and SteamVR shows an icon for the headset (and controllers).
 
-First make sure that SteamVR (more specifically, vrserver.exe) is allowed incoming connections (UDP, port 9944) in your firewall. You can also try disabling your firewall for testing, but you keep it disabled to use ALVR.
+First make sure that SteamVR (more specifically, vrserver.exe) is allowed incoming connections (UDP, port 9944) in your firewall. You can also try disabling your firewall for testing, but you keep it disabled to use mfsimvr.
 
 You can try restarting ALVR on both the headset and the PC. On the headset, when connecting, you should see the view lagging behind when you turn your head (it drops below 1 fps), this means the headset is getting a response from the streamer when connecting and is waiting for the video stream to start. If you get no lag in the headset, response from the PC isn't reaching the headset.
 

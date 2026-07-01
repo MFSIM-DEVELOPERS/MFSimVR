@@ -31,7 +31,7 @@ jobs:
           [ -n "$versionarg" ] && versionarg="--version $versionarg" || versionarg=""
           out=$(cargo xtask bump $versionarg)
           echo "$out"
-          cargo update -p alvr_common
+          cargo update -p mfsimvr_common
           echo "version_tag=$(echo "$out" | grep -P '^v.*$')" >> $GITHUB_OUTPUT
 
       - name: Push changes

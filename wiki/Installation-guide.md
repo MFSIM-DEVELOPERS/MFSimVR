@@ -82,7 +82,7 @@ For Flatpak users, refer to the instructions [here](https://github.com/alvr-org/
 
 ## Advanced usage
 
-### Use ALVR together with third-party drivers
+### use mfsimvr together with third-party drivers
 
 By default ALVR disables other SteamVR drivers before starting. Among these drivers there is [Driver4VR](https://www.driver4vr.com/) for full body tracking. ALVR disables these drivers to maximize compatibility with every PC setup. You can disable this behavior by manually registering the ALVR driver. Go to the `installation` tab and click on `Register ALVR driver`. The next time you launch ALVR you will be able to use the other drivers concurrently.
 

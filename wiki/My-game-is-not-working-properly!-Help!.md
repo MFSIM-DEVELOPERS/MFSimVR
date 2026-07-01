@@ -7,7 +7,7 @@ While most games do work without any problems, some do only work partially or no
 - ...
 
 Most of the time its the overly specific initialization of the game towards a specific headset that breaks the game.
-For example, Vivecraft broke because ALVR reported the headset manufacturer as "Oculus driver 1.38.0" and not as "Oculus".
+For example, Vivecraft broke because mfsimvr reported the headset manufacturer as "Oculus driver 1.38.0" and not as "Oculus".
 In general, this is a rather bad practice as all relevant data can be accessed trough SteamVR and the game should not make assumptions based on the manufacturer of the hmd. There are many different fields that a game could require to run.
 
 Nonetheless, we want to play and support those games.

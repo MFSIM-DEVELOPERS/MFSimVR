@@ -19,9 +19,9 @@ Port-forwarding allows to connect devices that are behind different NATs, i.e. l
 2. Inside your router web interface or app, add a port-forwarding rule for your headset. You need to specify the ports 9943 and 9944 for both TCP and UDP.
 3. Connect to the remote PC and open ALVR. In the Devices tab press `Add device manually`. Fill in the fields with a name for your headset (you can use the name you want), the hostname (you can read it in the welcome screen in your headset when you open the ALVR app), the remote IP of the headset (that is the IP you got on step 1.) and then press `Save`.
 
-You can now use ALVR to connect to your remote PC.
+You can now use mfsimvr to connect to your remote PC.
 
-**Note**: The public IP can change often. Every time you want to use ALVR you need to check that your current public IP is the same as the last time. If the IP changed, you can update it using the "Edit connection" interface, accessed with the `Edit` button next to your headset name on the streamer.
+**Note**: The public IP can change often. Every time you want to use mfsimvr you need to check that your current public IP is the same as the last time. If the IP changed, you can update it using the "Edit connection" interface, accessed with the `Edit` button next to your headset name on the streamer.
 
 ## ZeroTier
 
