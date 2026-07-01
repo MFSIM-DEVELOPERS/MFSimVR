@@ -1,0 +1,18 @@
+[package]
+name = "mfsimvr_client_mock"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+mfsimvr_common.workspace = true
+mfsimvr_client_core.workspace = true
+mfsimvr_packets.workspace = true
+mfsimvr_session.workspace = true
+mfsimvr_system_info.workspace = true
+
+eframe = "0.34"
+env_logger = "0.11"
+rand = "0.10"

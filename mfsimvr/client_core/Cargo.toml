@@ -1,0 +1,37 @@
+[package]
+name = "mfsimvr_client_core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["rlib", "staticlib", "cdylib"]
+
+[features]
+link-stdcpp-shared = []
+default = ["link-stdcpp-shared"]
+
+[dependencies]
+mfsimvr_audio.workspace = true
+mfsimvr_common.workspace = true
+mfsimvr_graphics.workspace = true
+mfsimvr_packets.workspace = true
+mfsimvr_session.workspace = true
+mfsimvr_sockets.workspace = true
+mfsimvr_system_info.workspace = true
+
+app_dirs2 = "2"
+mdns-sd = "0.19"
+rand = "0.10"
+serde = "1"
+serde_json = "1"
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.15"
+ndk = { version = "0.9", features = ["api-level-28", "audio", "media"] }
+ndk-context = "0.1"
+
+[target.'cfg(not(target_os = "android"))'.dependencies]
+env_logger = "0.11"

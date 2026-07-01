@@ -1,0 +1,17 @@
+[package]
+name = "mfsimvr_adb"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+mfsimvr_common.workspace = true
+mfsimvr_filesystem.workspace = true
+mfsimvr_system_info.workspace = true
+mfsimvr_session.workspace = true
+
+anyhow = "1"
+ureq = "3"
+zip = "8"

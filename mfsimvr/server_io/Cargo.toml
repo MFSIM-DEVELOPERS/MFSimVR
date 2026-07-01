@@ -1,0 +1,19 @@
+[package]
+name = "mfsimvr_server_io"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+mfsimvr_common.workspace = true
+mfsimvr_events.workspace = true
+mfsimvr_filesystem.workspace = true
+mfsimvr_packets.workspace = true
+mfsimvr_session.workspace = true
+
+encoding_rs_io = "0.1"
+dirs = "6"
+runas = "^1.2" # version 1.1 is broken
+serde_json = "1"
